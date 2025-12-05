@@ -1,0 +1,52 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 35px;
+    padding-left: 35px;    
+}
+
+.border {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    background-color: #020024;
+    border-radius: 50%;
+    background-image: url(https://static.wikia.nocookie.net/wutheringwaves/images/d/d7/Resonator_Chisa.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav a {
+    margin: 0 2px;
+    font-weight: 450;
+    font-size: 18px;
+}
+
+.footer {
+    text-align: right;
+    padding: 1px;
+    background-color: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: black;
+    width: 100%;
+    bottom: 0;
+    margin: 0 1px;
+    font-weight: normal;
+    font-size: 18px;
+    
+}
+
+.main {
+    min-height: 500px;
+}

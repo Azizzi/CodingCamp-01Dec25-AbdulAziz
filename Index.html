@@ -8,18 +8,101 @@
     <!-- CSS External -->
     <link rel="stylesheet" href="CSS\Style.css">
 
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body>
     
     <!-- Header -->
-     <header></header>
+     <header class="main-header">
+        
+        <!-- Logo -->
+        <div class="logo"></div>
+
+        <!-- Navigation Bar -->
+         <nav>
+                <a class="border p-[5px]" href="#Home-Page">Home</a>
+                <a class="border p-[5px]" href="#Profile">Profile</a>
+                <a class="border p-[5px]" href="#Portfolio">Portfolio</a>
+                <a class="border p-[5px]" href="#MessageUs">Message Us</a>
+         </nav>
+
+     </header>
 
     <!-- Main -->
-    <main></main>
+    <main>
+        
+        <!-- Home Page -->
+        <section id="Home-Page" class="min-h-[500px] text-left content-top p-8">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
+            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+        </section>
+
+        <hr>
+
+        <!-- Profile -->
+        <section id="Profile" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">About Aziz</h2>
+            <p class="mt-2">Yama Company is dedicated to providing top-notch services in various domains.</p>
+        </section>
+
+        <hr>
+
+        <!-- Portfolio -->
+        <section id="Portfolio" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Our Portfolio</h2>
+            <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
+        </section>
+
+        <hr>
+
+        <!-- MessageUs -->
+        <section id="MessageUs" class="min-h-[500px] mx-8 p-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Us</h2>
+                <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you
+                    promptly.</p>
+            </header>
+
+            <form>
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Name:</label>
+                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Date:</label>
+                    <input class="w-full p-2 border rounded" type="date" id="name" name="name" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="email">Email:</label>
+                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="message">Message:</label>
+                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5"
+                        required></textarea>
+                </div>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button" onclick="validateForm()">Send Message</button>
+            </form>
+
+        <!-- Result Box -->
+            <div id="resultBox" style="display:none; margin-top:30px; padding:20px; border:2px solid green; border-radius:8px;">
+                <h3>✅ Message Sent Successfully</h3>
+                <p><b>Name:</b> <span id="rName"></span></p>
+                <p><b>Date:</b> <span id="rDate"></span></p>
+                <p><b>Email:</b> <span id="rEmail"></span></p>
+                <p><b>Message:</b> <span id="rMessage"></span></p>
+            </div>         
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="footer" p-5>
+        <p class="text-right p-5"> Created By Aziz</p>
+    </footer>
 
     <!-- JS External -->
     <script src="JS\Script.js"></script>
