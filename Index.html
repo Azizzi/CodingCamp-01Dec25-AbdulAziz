@@ -35,31 +35,113 @@
     <main>
         
         <!-- Home Page -->
-        <section id="Home-Page" class="min-h-[500px] text-left content-top p-8">
-            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
-            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+        <section id="Home-Page" class="home-section">
+            <div class="home-overlay"></div>
+
+            <div class="home-content">
+                <h2 id="welcome-speech">Welcome to My Website</h2>
+                <div class="line"></div>
+
+                <p>
+                    A personal space where I share my journey, skills, and passion in the world of technology.
+                </p>
+
+                <a href="#Profile" class="home-btn">Explore More</a>
+            </div>
         </section>
+
 
         <hr>
 
         <!-- Profile -->
-        <section id="Profile" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">About Aziz</h2>
-            <p class="mt-2">Yama Company is dedicated to providing top-notch services in various domains.</p>
+        <section id="Profile" class="profile-section">
+            <div class="profile-wrapper">
+
+                <!-- Bagian teks -->
+                <div class="profile-text">
+                    <h2>About Aziz</h2>
+                    <div class="line"></div>
+
+                    <p>
+                        Hallo, salam kenal! Saya Abdul Aziz, seorang Fresh Graduate dari Jurusan Teknik Informatika
+                        (Networking) di Institut Asia Malang. Saya memiliki pemahaman dasar tentang manajemen dan
+                        konfigurasi jaringan, keamanan jaringan, serta pemrograman jaringan.
+                    </p>
+
+                    <p>
+                        Terbiasa dengan computer networking, wireless networking, dan troubleshooting.
+                        Saya bersemangat mengembangkan keterampilan melalui pengalaman langsung dan eksplorasi
+                        teknologi terbaru, serta siap berkontribusi dalam tim di industri IT.
+                    </p>
+
+                    <p class="quote">
+                        "Learning never stops in the world of technology."
+                    </p>
+                </div>
+
+                <!-- Bagian visual / skill card -->
+                <div class="profile-visual">
+                    <div class="glass-card">
+                        <h3>My Skills</h3>
+                        <div class="skills">
+                            <span>Networking</span>
+                            <span>Network Security</span>
+                            <span>Wireless</span>
+                            <span>System Troubleshooting</span>
+                            <span>Basic Programming</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <hr>
 
         <!-- Portfolio -->
-        <section id="Portfolio" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">Our Portfolio</h2>
-            <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
+        <section id="Portfolio" class="portfolio-section-modern">
+            <h2>My Portfolio</h2>
+            <div class="line"></div>
+
+            <p class="intro">
+                Berikut beberapa hasil karya yang berhubungan dengan dunia IT yang saya pelajari pada waktu perkuliahan. 
+                Proyek pertama berfokus pada konfigurasi dan manajemen jaringan (Networking), 
+                sedangkan proyek kedua berkaitan dengan bidang administrasi dan pengolahan data.
+            </p>
+
+            <div class="portfolio-grid">
+
+                <!-- Card 1 -->
+                <div class="portfolio-card">
+                    <img src="https://cdn.prod.website-files.com/65f7f0027cb1900111ab2e6f/682de2c0c0499dfde75dbf35_Blogartikel-Bilder-2025_IT-Network_1580x970px%20(1).webp" alt="Networking Project">
+                    <div class="overlay">
+                        <h3>Networking Project</h3>
+                        <p>
+                            Instalasi dan konfigurasi jaringan LAN/WLAN, routing,
+                            monitoring, dan troubleshooting jaringan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="portfolio-card">
+                    <img src="https://www.domainesia.com/wp-content/uploads/2024/01/1network-administrator.jpg" alt="Administration Project">
+                    <div class="overlay">
+                        <h3>Administration</h3>
+                        <p>
+                            Manajemen data, pengarsipan dokumen, input data
+                            dan pembuatan laporan administrasi.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <hr>
 
         <!-- MessageUs -->
-        <section id="MessageUs" class="min-h-[500px] mx-8 p-8">
+        <section id="MessageUs" class="Message-Us mx-8 p-8">
             <header>
                 <h2 class="text-xl font-bold">Message Us</h2>
                 <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you

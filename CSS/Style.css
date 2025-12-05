@@ -33,6 +33,294 @@ nav a {
     font-size: 18px;
 }
 
+.home-section {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:none center/cover no-repeat;
+    overflow: hidden;
+}
+
+
+.home-overlay {
+    position: absolute;
+    inset: 0;
+    background: #0f172a;
+    z-index: 1;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 700px;
+    padding: 20px;
+    animation: fadeUp 1s ease;
+}
+
+.home-content h2 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.home-content .line {
+    width: 90px;
+    height: 4px;
+    background: #38bdf8;
+    margin: 15px auto 20px auto;
+    border-radius: 10px;
+}
+
+.home-content p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-content h2 {
+        font-size: 28px;
+    }
+}
+
+
+.profile-section {
+    min-height: 100vh;
+    padding: 80px 10%;
+    background: #0f172a;
+    color: white;
+}
+
+.profile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.profile-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-text h2 {
+    font-size: 32px;
+}
+
+.profile-text .line {
+    width: 80px;
+    height: 4px;
+    background: #38bdf8;
+    margin: 12px 0 25px 0;
+    border-radius: 8px;
+}
+
+.profile-text p {
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin-bottom: 10px;
+}
+
+.profile-text .quote {
+    margin-top: 20px;
+    padding-left: 15px;
+    border-left: 4px solid #38bdf8;
+    font-style: italic;
+    color: #7dd3fc;
+}
+
+.profile-visual {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.glass-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 18px;
+    background: rgba(56, 189, 248, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.glass-card h3 {
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    padding: 8px 14px;
+    border-radius: 50px;
+    border: 1px solid #38bdf8;
+    font-size: 13px;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+.skills span:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    transform: translateY(-3px);
+}
+
+@media(max-width: 768px) {
+    .profile-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-text .line {
+        margin: 12px auto 25px auto;
+    }
+}
+
+.portfolio-section-modern {
+    min-height: 100vh;
+    padding: 80px 10%;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+/* Judul */
+.portfolio-section-modern h2 {
+    font-size: 32px;
+}
+
+/* Garis aksen */
+.portfolio-section-modern .line {
+    width: 80px;
+    height: 4px;
+    background: #38bdf8;
+    margin: 12px auto 20px;
+    border-radius: 10px;
+}
+
+/* Intro */
+.portfolio-section-modern .intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+/* Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    background: rgba(56, 189, 248, 0.05);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: 0.4s ease;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s ease;
+}
+
+/* Zoom image hover */
+.portfolio-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+/* Overlay text */
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    background: linear-gradient(to top, rgba(15,23,42,0.95), transparent);
+    transform: translateY(40%);
+    transition: 0.4s ease;
+}
+
+.portfolio-card:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay h3 {
+    margin: 0 0 10px;
+    color: #38bdf8;
+}
+
+.overlay p {
+    font-size: 14px;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* Efek naik saat hover */
+.portfolio-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio-section-modern {
+        padding: 60px 20px;
+    }
+
+    .portfolio-card img {
+        height: 220px;
+    }
+}
+
 .footer {
     text-align: right;
     padding: 1px;
@@ -45,8 +333,4 @@ nav a {
     font-weight: normal;
     font-size: 18px;
     
-}
-
-.main {
-    min-height: 500px;
 }
