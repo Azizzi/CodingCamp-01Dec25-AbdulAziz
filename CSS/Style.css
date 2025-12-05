@@ -28,10 +28,12 @@
 }
 
 nav a {
-    margin: 0 2px;
+    margin: 5px 8px;
     font-weight: 450;
-    font-size: 18px;
+    font-size: clamp(14px, 2vw, 18px);
+    display: inline-block;
 }
+
 
 .home-section {
     min-height: 100vh;
